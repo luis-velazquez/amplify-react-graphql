@@ -1,0 +1,194 @@
+.navbar-color {
+  background-color: #282636;
+}
+.footer-style {
+  background-color: #ebebeb;
+  bottom: 0;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.pic-container {
+  position: relative;
+}
+
+.portfolio-btn {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: #594bb5;
+  color: #ebebeb;
+}
+.portfolio-btn:hover {
+  background-color: #352c6b;
+  color: #ebebeb;
+}
+
+.margin {
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.pic-container:hover .margin {
+  opacity: 0.3;
+}
+
+.pic-container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #594bb5;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 5px;
+}
+.text:hover {
+  background-color: #352c6b;
+  color: #ebebeb;;
+  text-decoration: none;
+}
+
+.color1 {
+  color: #b5b3c1;
+}
+.color2 {
+  color: #9189c1;
+}
+.color3 {
+  color: #555555;
+}
+
+/* modal css */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.modalx {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modalx.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modalx-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modalx-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modalx-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modalx-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+/* modal css end */
+
+/* contact form css */
+.contact-title {
+  margin-top: 100px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 4s ease-in-out;
+}
+.contact-title h1 {
+  font-size: 32px;
+  line-height: 10px;
+}
+
+.contact-title h2 {
+  font-size: 16px;
+}
+
+form {
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+}
+.form-control {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+input {
+  height: 45px;
+}
+form .submit {
+  background: #594bb5;
+  border-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+form .submit:hover {
+  background-color: #4e4396;
+  cursor: pointer;
+}
